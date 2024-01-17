@@ -1,4 +1,11 @@
-div{
-    background-color: aqua;
-    color: aliceblue;
+#contenedor {
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+div.encabezado {
+    background-image: url(../imgs/cabecera.png);
+    color: #5a3e36;
+    font-family: Georgia, serif;
+    font-size: 16px;
 }
