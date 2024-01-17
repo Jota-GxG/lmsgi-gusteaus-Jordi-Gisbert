@@ -5,13 +5,23 @@
 }
 div.encabezado {
     background-image: url(../imgs/textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 36px;
     font-weight: 800;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 0px 0px 50px 50px;
+}
+div.encabezado::before {
+    content: url(../imgs/logoB.png);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translateY(-30px);
+    left: 20px;
 }
 
 div.menu ul li a {
@@ -33,10 +43,13 @@ div.contenido {
 }
 
 div.pie{
-    /* background-color: #a77e58; */
+    /* background-color: #5a3e36; */
     background-image: url(../imgs/textura.png);
-    color: #ffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ecdcc6 ;
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     text-align: center;
+    content: none;
 }
