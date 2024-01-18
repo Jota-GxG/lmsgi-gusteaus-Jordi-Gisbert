@@ -11,17 +11,25 @@ div.encabezado {
     font-family: Georgia, serif;
     font-size: 36px;
     font-weight: 800;
-    padding: 40px;
+    padding: 0px;
     text-align: center;
     border-radius: 0px 0px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-div.encabezado::before {
-    content: url(../imgs/logoB.png);
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    transform: translateY(-30px);
-    left: 20px;
+
+div.encabezado img {
+    left: 0;
+    width: 25%;
+    max-width: 100px;
+    padding: 10px;
+}
+
+div.encabezado p {
+    display: inline-block;
+    margin: 0;
+    width: 75%;
 }
 
 div.menu {
@@ -29,10 +37,21 @@ div.menu {
     color: #ffff;
     font-family: 'Helvetica', sans-serif;
 
+    border-radius: 50px 0 50px 0;
+    height: 4em;
+    max-height: 50px;
+}
+
+div.menu ul {
+    margin: 2px;
+    position: relative;
+    top: 10px;
+    padding: 0 20px 0 20px;
 }
 
 div.menu ul li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 
@@ -41,11 +60,16 @@ div.menu ul li a {
     color: #ffff;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
-    transition: all 0.5s;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+    text-decoration: none;
+    transition: all 0.4s;
 }
 
 div.menu ul li a:hover {
-    background-color: #8b6f47;
+    /* background-color: #8b6f47; */
+    border-bottom: #fff8f0 solid 4px;
+    transition: all 0.4s;
 }
 
 div.contenido {
@@ -87,4 +111,50 @@ div.pie nav a:hover{
 div.pie p {
     padding: 10px;
     margin: 0;
+}
+
+@media (max-width: 540px){
+    div.menu {
+        height: 4em;
+        max-height: 4em;
+    }
+}
+
+@media (max-width: 350px){
+    div.encabezado {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    div.encabezado p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    div.encabezado img {
+        width: 15%;
+        padding: 1px;
+        font-size: 20px;
+    }
+
+    div.menu {
+        height: 6em;
+        max-height: 6em;
+    }
+}
+
+@media (max-width: 270px){
+    div.menu ul li a {
+        font-size: 15px;
+    }
+
+    div.menu {
+        height: 7em;
+        max-height: 7em;
+    }
+
+    div.menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
