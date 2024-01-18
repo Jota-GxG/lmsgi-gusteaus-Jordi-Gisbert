@@ -24,11 +24,24 @@ div.encabezado::before {
     left: 20px;
 }
 
+div.menu {
+    background-color: #a77e58;
+    color: #ffff;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+div.menu ul li {
+    display: inline-block;
+}
+
+
 div.menu ul li a {
     background-color: #a77e58;
     color: #ffff;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
+    transition: all 0.5s;
 }
 
 div.menu ul li a:hover {
@@ -70,7 +83,6 @@ div.pie nav a{
 div.pie nav a:hover{
     transform:scale(1.2);
 }
-
 
 div.pie p {
     padding: 10px;
