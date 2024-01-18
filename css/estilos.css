@@ -61,7 +61,7 @@ div.menu ul li a {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     padding: 5px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     text-decoration: none;
     transition: all 0.4s;
 }
