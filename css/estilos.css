@@ -58,12 +58,13 @@ div.menu ul {
 
 div.menu ul li {
     display: inline-block;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: 5px 0 5px 5px;
 }
 
 
 div.menu ul li a {
-    background-color: #a77e58;
+    /* background-color: #a77e58; */
     color: #ffff;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
@@ -146,6 +147,12 @@ div.pie p {
 
 }
 
+@media (max-width: 640px){
+    div.menu {
+        height: 5em;
+        max-height: 5em;
+    }
+}
 
 @media (max-width: 575px){
     div.sidebar {
@@ -163,19 +170,13 @@ div.pie p {
     }
 
 }
-@media (max-width: 673px){
-    div.menu {
-        height: 4em;
-        max-height: 4em;
-    }
-}
 
 @media (max-width: 402px){
     div.menu {
         width: 100%;
         transform: translateX(0%);
-        height: 4em;
-        max-height: 4em;
+        height: 5em;
+        max-height: 5em;
     }
 }
 
@@ -215,8 +216,8 @@ div.pie p {
     }
 
     div.menu {
-        height: 6em;
-        max-height: 6em;
+        height: 7em;
+        max-height: 7em;
     }
 
     div.pie nav a {
@@ -243,7 +244,7 @@ div.pie p {
 }
 
 
-@media (max-width: 276px){
+/* @media (max-width: 276px){
     div.menu ul li a {
         font-size: 15px;
         padding: 5px;
@@ -253,6 +254,32 @@ div.pie p {
     div.menu {
         height: 7em;
         max-height: 7em;
+    }
+
+    div.menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.pie nav a {
+        font-size: 12px;
+    }
+    div.pie p {
+        font-size: 10px;
+    }
+} */
+
+@media (max-width: 285px){
+    div.menu ul li a {
+        font-size: 15px;
+        padding: 5px;
+        transition: none;
+    }
+
+    div.menu {
+        height: 10em;
+        max-height: 10em;
     }
 
     div.menu ul {
