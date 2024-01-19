@@ -1,3 +1,7 @@
+body {
+    margin: 0 10px 0 10px;
+}
+
 #contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
@@ -33,6 +37,9 @@ div.encabezado p {
 }
 
 div.menu {
+    width: 80%;
+    transform: translateX(15%);
+
     background-color: #a77e58;
     color: #ffff;
     font-family: 'Helvetica', sans-serif;
@@ -77,6 +84,21 @@ div.contenido {
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: left;
+    width: 70%;
+    padding: 2px;
+    margin: 2px;
+    border-right: #5a3e36 solid 1px;
+
+
+}
+
+div.sidebar {
+    float: right;
+    width: 21%;
+    height: 100%;
+    padding: 10px;
+    color: #5a3e36;
 }
 
 div.pie{
@@ -90,6 +112,7 @@ div.pie{
     text-align: center;
     content: none;
     padding: 10px 0 10px 0;
+    clear: both;
 }
 
 div.pie nav {
@@ -113,14 +136,69 @@ div.pie p {
     margin: 0;
 }
 
-@media (max-width: 540px){
+
+
+
+@media (max-width: 935px){
+    div.sidebar h2{
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 575px){
+    div.sidebar {
+        width: 30%;
+        font-size: 12px;
+    }
+    div.sidebar ul {
+        padding-left: 20px;
+    }
+
+    div.contenido {
+        width: 60%;
+        padding: 5px;
+    
+    }
+
+}
+@media (max-width: 673px){
     div.menu {
         height: 4em;
         max-height: 4em;
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 402px){
+    div.menu {
+        width: 100%;
+        transform: translateX(0%);
+        height: 4em;
+        max-height: 4em;
+    }
+}
+
+@media (max-width: 375px){
+    div.encabezado {
+        font-size: 30px;
+    }
+    div.contenido {
+        width: 6;
+        font-size: 14px;
+    
+    }
+
+    div.sidebar {
+        font-size: 12px;
+        float: right;
+        width: 29%;
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 325px){
     div.encabezado {
         border-radius: 0px 0px 20px 20px;
     }
@@ -140,11 +218,36 @@ div.pie p {
         height: 6em;
         max-height: 6em;
     }
+
+    div.pie nav a {
+        padding: 5px;
+        font-size: 16px;
+    }
+    div.pie p {
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 270px){
+@media (max-width: 335px){
+    div.contenido {
+        width: 90%;
+        border: none;
+    
+    }
+
+    div.sidebar {
+        border-top: #5a3e36 solid 1px;
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 276px){
     div.menu ul li a {
         font-size: 15px;
+        padding: 5px;
+        transition: none;
     }
 
     div.menu {
@@ -156,5 +259,12 @@ div.pie p {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    div.pie nav a {
+        font-size: 12px;
+    }
+    div.pie p {
+        font-size: 10px;
     }
 }
