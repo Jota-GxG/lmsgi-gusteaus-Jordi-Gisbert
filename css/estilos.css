@@ -62,7 +62,6 @@ div.menu ul li {
 }
 
 div.menu ul li a {
-    /* background-color: #a77e58; */
     color: #ffff;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
@@ -166,7 +165,7 @@ form.reservas input[type=submit]:hover {
 }
 
 div.sidebar {
-    float: right;
+    float: left;
     width: 21%;
     height: 100%;
     padding: 10px;
@@ -174,7 +173,6 @@ div.sidebar {
 }
 
 div.pie{
-    /* background-color: #5a3e36; */
     background-image: url(../imgs/textura.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,8 +219,6 @@ div.pie p {
     }
 }
 
-
-
 @media (max-width: 640px){
     div.menu {
         height: 5em;
@@ -253,9 +249,7 @@ div.pie p {
         height: 5em;
         max-height: 5em;
     }
-}
 
-@media (max-width: 375px){
     div.encabezado {
         font-size: 30px;
     }
