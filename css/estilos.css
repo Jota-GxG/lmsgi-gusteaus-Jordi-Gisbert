@@ -7,6 +7,7 @@ body {
     font-family: 'Times New Roman', serif;
     font-size: 16px;
 }
+
 div.encabezado {
     background-image: url(../imgs/textura.png);
     background-repeat: no-repeat;
@@ -39,11 +40,9 @@ div.encabezado p {
 div.menu {
     width: 80%;
     transform: translateX(15%);
-
     background-color: #a77e58;
     color: #ffff;
     font-family: 'Helvetica', sans-serif;
-
     border-radius: 50px 0 50px 0;
     height: 4em;
     max-height: 50px;
@@ -61,7 +60,6 @@ div.menu ul li {
     /* margin-left: 10px; */
     margin: 5px 0 5px 5px;
 }
-
 
 div.menu ul li a {
     /* background-color: #a77e58; */
@@ -90,8 +88,81 @@ div.contenido {
     padding: 2px;
     margin: 2px;
     border-right: #5a3e36 solid 1px;
+}
 
+form.reservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 10px 0 10px 0;
+    margin: 0 15px 0 15px;
+    border: #5a3e36 solid 1px;
+    border-radius: 5px;
+}
 
+form.reservas label {
+    font-size: 16px;
+    display: block;
+}
+
+form.reservas input[type='text'],
+form.reservas input[type='date'],
+form.reservas input[type='time'],
+form.reservas input[type='number'],
+form.reservas div.telefono select,
+form.reservas div.telefono input[type='tel'],
+form.reservas input[type='email'],
+form.reservas textarea {
+    background-color: #fff8f0;
+    border: #a77e58 solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0 10px 0;
+}
+
+form.reservas input[type='text']:hover,
+form.reservas input[type='date']:hover,
+form.reservas input[type='time']:hover,
+form.reservas input[type='number']:hover,
+form.reservas div.telefono select:hover,
+form.reservas div.telefono input[type='tel']:hover,
+form.reservas input[type='email']:hover,
+form.reservas textarea:hover {
+    border: #5a3e36 solid 1px;
+}
+
+form.reservas div.telefono {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form.reservas div.telefono select {
+    width: 30%;
+    margin-right: 5px;
+}
+
+form.reservas div.telefono input[type='tel'] {
+    width: 50%;
+    margin-right: 5px;
+}
+
+form.reservas input[type=submit] {
+    background-color: #a77e58;
+    border: #5a3e36 solid 2px;
+    color: #ffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    transition: all 0.5s;
+}
+
+form.reservas input[type=submit]:hover {
+    background-color: #5a3e36;
+    border: #a77e58 solid 2px;
 }
 
 div.sidebar {
@@ -137,15 +208,20 @@ div.pie p {
     margin: 0;
 }
 
-
-
-
 @media (max-width: 935px){
     div.sidebar h2{
         font-size: 22px;
     }
-
 }
+
+@media (max-width: 900px){
+    form.reservas {
+        padding: 10px 2% 10px 2%;
+        width: 85%;
+    }
+}
+
+
 
 @media (max-width: 640px){
     div.menu {
@@ -159,6 +235,7 @@ div.pie p {
         width: 30%;
         font-size: 12px;
     }
+
     div.sidebar ul {
         padding-left: 20px;
     }
@@ -166,9 +243,7 @@ div.pie p {
     div.contenido {
         width: 60%;
         padding: 5px;
-    
     }
-
 }
 
 @media (max-width: 402px){
@@ -184,6 +259,7 @@ div.pie p {
     div.encabezado {
         font-size: 30px;
     }
+
     div.contenido {
         width: 6;
         font-size: 14px;
@@ -196,7 +272,6 @@ div.pie p {
         width: 29%;
         padding: 10px;
     }
-
 }
 
 @media (max-width: 325px){
@@ -233,7 +308,6 @@ div.pie p {
     div.contenido {
         width: 90%;
         border: none;
-    
     }
 
     div.sidebar {
@@ -242,33 +316,6 @@ div.pie p {
         padding: 10px;
     }
 }
-
-
-/* @media (max-width: 276px){
-    div.menu ul li a {
-        font-size: 15px;
-        padding: 5px;
-        transition: none;
-    }
-
-    div.menu {
-        height: 7em;
-        max-height: 7em;
-    }
-
-    div.menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.pie nav a {
-        font-size: 12px;
-    }
-    div.pie p {
-        font-size: 10px;
-    }
-} */
 
 @media (max-width: 285px){
     div.menu ul li a {

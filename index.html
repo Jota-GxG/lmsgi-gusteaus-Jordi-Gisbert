@@ -36,6 +36,49 @@
             </ul>
             <h3 id="reservas">Reservas</h3>
             <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+
+            <form action="#" class="reservas">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Nombre Reserva" required>
+
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="fecha" min="2024-01-20" required>
+                
+                <label for="hora">Hora: </label>
+                <input type="time" name="hora" value="19:30" required>
+
+                <label for="personas">Nº Personas: </label>
+                <input type="number" name="personas" value="1" min="1" required>
+
+                <label for="telefono">Telefono: </label>
+                <div class="telefono">
+                    <select name="prefijo" required>
+                        <option value="" disabled selected>Prefijo</option>
+                        <option value="31">(+31) Países Bajos</option>
+                        <option value="32">(+32) Bélgica</option>
+                        <option value="33">(+33) Francia</option>
+                        <option value="34">(+34) España</option>
+                        <option value="39">(+39) Italia</option>
+                        <option value="41">(+41) Suiza</option>
+                        <option value="43">(+43) Austria</option>
+                        <option value="44">(+44) Reino Unido</option>
+                        <option value="48">(+48) Polonia</option>
+                        <option value="49">(+49) Alemania</option>
+                        <option value="352">(+352) Andorra</option>
+                        <option value="377">(+377) San Marino</option>
+                        <option value="420">(+420) República Checa</option>
+                    </select>
+                    <input type="tel" name="telefono" min="0" maxlength="9" placeholder="Numero de Telefono" required>
+                </div>
+
+                <label for="correo">Correo: </label>
+                <input type="email" placeholder="Correo Electronico">
+
+                <label for="peticiones">Peticiones Personalizadas: </label>
+                <textarea name="peticiones" id="" cols="20" rows="5"></textarea>
+
+                <input type="submit" id="enviar" value="Enviar">
+            </form>
             <h3 id="contacto">Contacto</h3>
             <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
         </div>
@@ -48,14 +91,6 @@
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
         </div>
-        <!-- 
-            Se tiene que poner los enlaces, ya que mediante CSS no se puede,
-            En la parte del logo bueno, aun se puede hacer, pero no recuerdo
-            haber dado position: absolute; transform: translateY(-30px);
-            porque sino, no se como se deberia hacer sin Editar el HTML, pero
-            ahora si que no hay mas remedio.
-        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia</div>
-        -->
         <div class="pie">
             <nav>
                 <a href="#inicio">Inicio</a>
