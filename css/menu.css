@@ -37,7 +37,7 @@ div.encabezado p {
     width: 75%;
 }
 
-div.menu {
+nav.menu {
     width: 80%;
     transform: translateX(15%);
     background-color: #a77e58;
@@ -48,20 +48,20 @@ div.menu {
     max-height: 50px;
 }
 
-div.menu ul {
+nav.menu ul {
     margin: 2px;
     position: relative;
     top: 10px;
     padding: 0 20px 0 20px;
 }
 
-div.menu ul li {
+nav.menu ul li {
     display: inline-block;
-    /* margin-left: 10px; */
+    margin-left: 10px;
     margin: 5px 0 5px 5px;
 }
 
-div.menu ul li a {
+nav.menu a {
     color: #ffff;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
@@ -71,7 +71,7 @@ div.menu ul li a {
     transition: all 0.4s;
 }
 
-div.menu ul li a:hover {
+nav.menu ul li a:hover {
     /* background-color: #8b6f47; */
     border-bottom: #fff8f0 solid 4px;
     transition: all 0.4s;
