@@ -7,48 +7,83 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-    <header>
-        <h1>Menú Estrella del Restaurante Gusteau's</h1>
-    </header>
-
-    <nav class="menu">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-            <li><a href="#menu">Menú</a></li>
-            <li><a href="#reservas">Reservas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="menu-estrella">
-            <h2>Platos Principales</h2>
+    <div id="contenedor">
+        <header>
+                <img src="./imgs/logoB.png" alt="Logo">
+                <p>Menú Estrella del Restaurante Gusteau's</p>
+            <h1></h1>
+        </header>
+        
+        <nav class="menu">
             <ul>
-                <li data-alergenos="nueces mariscos">Ensalada Mediterránea con Nueces y Gambas</li>
-                <li data-alergenos="nueces">Tarta de Chocolate y Nueces</li>
-                <li data-alergenos="mariscos">Paella de Mariscos</li>
-                <li>Sopa de Verduras</li>
-
-
-
-                <!-- Más platos aquí -->
+                <li>
+                    <a href="index.html" class="atras">
+                        <img src="./imgs/back.png" alt="Atras">
+                    </a>
+                </li>
+                <li><a href="#platosPrincipales">Platos Principales</a></li>
+                <li><a href="#entrantes">entrantes</a></li>
+                <li><a href="#postres">Postres</a></li>
             </ul>
+        </nav>
 
-            <h2>Entrantes</h2>
+        <main>
+            <section class="menu-estrella">
+                <h2 id="platosPrincipales">Platos Principales</h2>
+                <ul>
+                    <li data-alergenos="pescado">Filete de Salmón en Costra de Hierbas</li>
+                    <li data-alergenos="">Pato a la Naranja con Puré de Zanahoria y Jengibre</li>
+                    <li data-alergenos="">Ratatouille de Verduras con Quinoa Tricolor</li>
+                    
+                    <li data-alergenos="frutos secos mariscos">Ensalada Mediterránea con Nueces y Gambas</li>
+                    <li data-alergenos="frutos secos">Tarta de Chocolate y Nueces</li>
+                    <li data-alergenos="mariscos">Paella de Mariscos</li>
+                    <li>Sopa de Verduras</li>
+                </ul>
+
+                <h2 id="entrantes">Entrantes</h2>
+                <ul>
+                    <li data-alergenos="frutos secos">Ensalada de Hojas Verdes con Queso de Cabra y Frutas Secas</li>
+                    <li data-alergenos="gluten">Sopa de Cebolla Gratinada con Pan sin Gluten</li>
+                    <li data-alergenos="pescado">Tartar de Salmón con Aguacate y Salsa de Mostaza Dijon</li>
+                    <li data-alergenos="pescado">Huevos Rellenos con Salmón Ahumado y Caviar</li>
+                    <li data-alergenos="gluten">Terrina de Verduras Asadas con Hummus de Garbanzos</li>
+                    <li data-alergenos="frutos secos">Carpaccio de Remolacha con Queso Azul y Nueces</li>
+                </ul>
+
+                <h2 id="postres">Postres</h2>
+                <ul>
+                    <li  data-alergenos="nata huevo">Crème Brûlée de Vainilla con Frutas Rojas</li>
+                    <li data-alergenos="frutos secos">Tarta de Chocolate Negro y Avellanas Sin Gluten</li>
+                    <li data-alergenos="huevo">Soufflé de Mango con Salsa de Maracuyá</li>
+                    <li>Sorbete de Frambuesa con Menta Fresca</li>
+                </ul>
+            </section>
+        </main>
+        <div class="sidebar">
+            <h2>Alergenos:</h2>
             <ul>
-                <!-- Ítems de entrantes aquí -->
+                <li>🐟 Pescado</li>
+                <li>🥜 Cacahuetes</li>
+                <li>🌰 Frustos Secos</li>
+                <li>🦐 Marisco</li>
+                <li>🌾 Gluten</li>
+                <li>🌱 Soja</li>
+                <li>🍞 Sesamo</li>
+                <li>🥚 Huevo</li>
+                <li>🍦 Nata</li>
             </ul>
+        </div>
 
-            <h2>Postres</h2>
-            <ul>
-                <!-- Ítems de postres aquí -->
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Información del pie de página aquí -->
-    </footer>
+        <footer>
+            <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#sobrenosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            </nav>
+            <p>© 2024 Restaurante Gusteau's - 65 Rue du Ruisseau, 75018 Paris, Francia</p>
+        </footer>
+    </div>
 </body>
 </html>

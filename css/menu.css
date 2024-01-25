@@ -8,7 +8,7 @@ body {
     font-size: 16px;
 }
 
-div.encabezado {
+header {
     background-image: url(../imgs/textura.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,17 +24,29 @@ div.encabezado {
     align-items: center;
 }
 
-div.encabezado img {
+header img {
     left: 0;
     width: 25%;
     max-width: 100px;
     padding: 10px;
 }
 
-div.encabezado p {
+header p {
     display: inline-block;
     margin: 0;
     width: 75%;
+}
+
+div.contenido {
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    float: left;
+    width: 70%;
+    padding: 2px;
+    margin: 2px;
+    border-right: #5a3e36 solid 1px;
 }
 
 nav.menu {
@@ -59,6 +71,7 @@ nav.menu ul li {
     display: inline-block;
     margin-left: 10px;
     margin: 5px 0 5px 5px;
+    transform: translateY(-15px);
 }
 
 nav.menu a {
@@ -72,30 +85,31 @@ nav.menu a {
 }
 
 nav.menu ul li a:hover {
-    /* background-color: #8b6f47; */
     border-bottom: #fff8f0 solid 4px;
-    transition: all 0.4s;
 }
 
-div.contenido {
-    background-color: #fff8f0;
-    color: #5a3e36;
-    font-family: 'Georgia', serif;
-    font-size: 18px;
-    float: left;
-    width: 70%;
-    padding: 2px;
-    margin: 2px;
-    border-right: #5a3e36 solid 1px;
+nav.menu ul li a.atras img {
+    width: 30px;
+    height: 30px;
+    transform: translateY(10px);
+    transition: all 0.3s;
 }
 
-[data-alergenos="nueces mariscos"]::before {
-    content: '🦐 🥜 ';
+nav.menu ul li a.atras{
+    border-bottom: 0;
+}
+
+nav.menu ul li a.atras:hover img{
+    transform:scale(1.2) translateY(10px);
+}
+
+[data-alergenos="frutos secos mariscos"]::before {
+    content: '🦐 🌰 ';
     padding-right: 20px;
 }
 
-[data-alergenos="nueces mariscos"]::after {
-    content: '🦐 🥜 ';
+[data-alergenos="frutos secos mariscos"]::after {
+    content: '🌰 🦐 ';
     padding-left: 20px;
 }
 
@@ -109,12 +123,141 @@ div.contenido {
     padding-left: 20px;
 }
 
-[data-alergenos="nueces"]::before {
+[data-alergenos="frutos secos"]::before {
+    content: '🌰 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="frutos secos"]::after {
+    content: '🌰 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="cacahuetes"]::before {
     content: '🥜 ';
     padding-right: 20px;
 }
 
-[data-alergenos="nueces"]::after {
+[data-alergenos="cacahuetes"]::after {
     content: '🥜 ';
     padding-left: 20px;
+}
+
+[data-alergenos="pescado"]::before {
+    content: '🐟 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="pescado"]::after {
+    content: '🐟 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="gluten"]::before {
+    content: '🌾 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="gluten"]::after {
+    content: '🌾 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="soja"]::before {
+    content: '🌱 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="soja"]::after {
+    content: '🌱 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="sesamo"]::before {
+    content: '🍞 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="sesamo"]::after {
+    content: '🍞 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="huevo"]::before {
+    content: '🥚 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="huevo"]::after {
+    content: '🥚 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="nata"]::before {
+    content: '🍦 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="nata"]::after {
+    content: '🍦 ';
+    padding-left: 20px;
+}
+
+[data-alergenos="nata huevo"]::before {
+    content: '🍦 🥚 ';
+    padding-right: 20px;
+}
+
+[data-alergenos="nata huevo"]::after {
+    content: '🍦 🥚 ';
+    padding-left: 20px;
+}
+
+main {
+    width: 70%;
+    padding: 1%;
+    float: left;
+    border-right: #5a3e36 1px solid;
+    background-color: #fff8f0;
+}
+
+div.sidebar {
+    width: 20%;
+    padding: 1%;
+    float: left;
+    background-color: #fff8f0;
+}
+
+footer{
+    background-image: url(../imgs/textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ecdcc6 ;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    content: none;
+    padding: 10px 0 10px 0;
+    clear: both;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a{
+    color: #ecdcc6;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+footer nav a:hover{
+    transform:scale(1.2);
+}
+
+footer p {
+    padding: 10px;
+    margin: 0;
 }
