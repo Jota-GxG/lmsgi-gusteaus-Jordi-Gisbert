@@ -89,268 +89,32 @@ div.contenido {
     border-right: #5a3e36 solid 1px;
 }
 
-#menu + ul li {
-    padding: 5px;
-    margin-bottom:5px;
+[data-alergenos="nueces mariscos"]::before {
+    content: '🦐 🥜 ';
+    padding-right: 20px;
 }
 
-#menu + ul li a {
-    color: #a77e58;
-    /* text-decoration: none; */
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 0.4s;
+[data-alergenos="nueces mariscos"]::after {
+    content: '🦐 🥜 ';
+    padding-left: 20px;
 }
 
-#menu + ul li a:hover {
-    background-color: #5a3e36;
-    color: #a77e58;
+[data-alergenos="mariscos"]::before {
+    content: '🦐 ';
+    padding-right: 20px;
 }
 
-form.reservas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    padding: 10px 0 10px 0;
-    margin: 0 15px 0 15px;
-    border: #5a3e36 solid 1px;
-    border-radius: 5px;
+[data-alergenos="mariscos"]::after {
+    content: '🦐 ';
+    padding-left: 20px;
 }
 
-form.reservas label {
-    font-size: 16px;
-    display: block;
+[data-alergenos="nueces"]::before {
+    content: '🥜 ';
+    padding-right: 20px;
 }
 
-form.reservas input[type='text'],
-form.reservas input[type='date'],
-form.reservas input[type='time'],
-form.reservas input[type='number'],
-form.reservas div.telefono select,
-form.reservas div.telefono input[type='tel'],
-form.reservas input[type='email'],
-form.reservas textarea {
-    background-color: #fff8f0;
-    border: #a77e58 solid 1px;
-    border-radius: 5px;
-    padding: 10px;
-    width: 80%;
-    margin: 10px 0 10px 0;
-}
-
-form.reservas input[type='text']:hover,
-form.reservas input[type='date']:hover,
-form.reservas input[type='time']:hover,
-form.reservas input[type='number']:hover,
-form.reservas div.telefono select:hover,
-form.reservas div.telefono input[type='tel']:hover,
-form.reservas input[type='email']:hover,
-form.reservas textarea:hover {
-    border: #5a3e36 solid 1px;
-}
-
-form.reservas div.telefono {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-form.reservas div.telefono select {
-    width: 30%;
-    margin-right: 5px;
-}
-
-form.reservas div.telefono input[type='tel'] {
-    width: 50%;
-    margin-right: 5px;
-}
-
-form.reservas input[type=submit] {
-    background-color: #a77e58;
-    border: #5a3e36 solid 2px;
-    color: #ffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    display: block;
-    width: 80%;
-    transition: all 0.5s;
-}
-
-form.reservas input[type=submit]:hover {
-    background-color: #5a3e36;
-    border: #a77e58 solid 2px;
-}
-
-div.sidebar {
-    float: left;
-    width: 21%;
-    height: 100%;
-    padding: 10px;
-    color: #5a3e36;
-}
-
-div.pie{
-    background-image: url(../imgs/textura.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ecdcc6 ;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    content: none;
-    padding: 10px 0 10px 0;
-    clear: both;
-}
-
-div.pie nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-div.pie nav a{
-    color: #ecdcc6;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all 0.6s;
-}
-
-div.pie nav a:hover{
-    transform:scale(1.2);
-}
-
-div.pie p {
-    padding: 10px;
-    margin: 0;
-}
-
-@media (max-width: 935px){
-    div.sidebar h2{
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 900px){
-    form.reservas {
-        padding: 10px 2% 10px 2%;
-        width: 85%;
-    }
-}
-
-@media (max-width: 640px){
-    div.menu {
-        height: 5em;
-        max-height: 5em;
-    }
-}
-
-@media (max-width: 575px){
-    div.sidebar {
-        width: 30%;
-        font-size: 12px;
-    }
-
-    div.sidebar ul {
-        padding-left: 20px;
-    }
-
-    div.contenido {
-        width: 60%;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 402px){
-    div.menu {
-        width: 100%;
-        transform: translateX(0%);
-        height: 5em;
-        max-height: 5em;
-    }
-
-    div.encabezado {
-        font-size: 30px;
-    }
-
-    div.contenido {
-        width: 6;
-        font-size: 14px;
-    
-    }
-
-    div.sidebar {
-        font-size: 12px;
-        float: right;
-        width: 29%;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 325px){
-    div.encabezado {
-        border-radius: 0px 0px 20px 20px;
-    }
-
-    div.encabezado p {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    div.encabezado img {
-        width: 15%;
-        padding: 1px;
-        font-size: 20px;
-    }
-
-    div.menu {
-        height: 7em;
-        max-height: 7em;
-    }
-
-    div.pie nav a {
-        padding: 5px;
-        font-size: 16px;
-    }
-    div.pie p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 335px){
-    div.contenido {
-        width: 90%;
-        border: none;
-    }
-
-    div.sidebar {
-        border-top: #5a3e36 solid 1px;
-        width: 90%;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 285px){
-    div.menu ul li a {
-        font-size: 15px;
-        padding: 5px;
-        transition: none;
-    }
-
-    div.menu {
-        height: 10em;
-        max-height: 10em;
-    }
-
-    div.menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.pie nav a {
-        font-size: 12px;
-    }
-    div.pie p {
-        font-size: 10px;
-    }
+[data-alergenos="nueces"]::after {
+    content: '🥜 ';
+    padding-left: 20px;
 }
