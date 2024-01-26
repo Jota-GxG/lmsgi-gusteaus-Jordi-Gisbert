@@ -150,6 +150,12 @@ form.reservas textarea:hover {
     border: #5a3e36 solid 1px;
 }
 
+form.reservas input[required]:invalid,
+form.reservas div.telefono select[required],
+form.reservas div.telefono input[required]:invalid {
+    border: 2px dashed red;
+}
+
 form.reservas div.telefono {
     width: 100%;
     display: flex;

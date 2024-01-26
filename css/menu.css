@@ -110,7 +110,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="frutos secos mariscos"]::after {
     content: '🌰 🦐 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="mariscos"]::before {
@@ -120,7 +120,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="mariscos"]::after {
     content: '🦐 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="frutos secos"]::before {
@@ -130,7 +130,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="frutos secos"]::after {
     content: '🌰 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="cacahuetes"]::before {
@@ -140,7 +140,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="cacahuetes"]::after {
     content: '🥜 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="pescado"]::before {
@@ -150,7 +150,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="pescado"]::after {
     content: '🐟 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="gluten"]::before {
@@ -160,7 +160,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="gluten"]::after {
     content: '🌾 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="soja"]::before {
@@ -170,7 +170,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="soja"]::after {
     content: '🌱 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="sesamo"]::before {
@@ -180,7 +180,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="sesamo"]::after {
     content: '🍞 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="huevo"]::before {
@@ -190,7 +190,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="huevo"]::after {
     content: '🥚 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="nata"]::before {
@@ -200,7 +200,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="nata"]::after {
     content: '🍦 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 /* [data-alergenos="nata huevo"]::before {
@@ -210,7 +210,7 @@ nav.menu ul li a.atras:hover img{
 
 [data-alergenos="nata huevo"]::after {
     content: '🍦 🥚 ';
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 main {
@@ -260,4 +260,70 @@ footer nav a:hover{
 footer p {
     padding: 10px;
     margin: 0;
+}
+
+@media (max-width: 690px) {
+    main {
+        font-size: 14px;
+    }
+
+    div.sidebar {
+        font-size: 14px;
+    }
+
+    footer nav a{
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 615px) {
+    main {
+        font-size: 12px;
+    }
+
+    div.sidebar {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 553px) {
+    div.encabezado img {
+        left: 0;
+        width: 25%;
+        max-width: 100px;
+        padding: 10px;
+    }
+    
+    div.encabezado p {
+        display: inline-block;
+        margin: 0;
+        width: 75%;
+        font-size: 16px;
+    }
+
+    nav.menu ul li a{
+        font-size: 14px
+    }
+
+    nav.menu ul li a.atras img {
+        width: 15px;
+        height: 15px;
+        transform: translateY(10px);
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    div.sidebar {
+        font-size: 10px;
+    }
+
+    div.sidebar ul{
+        padding-left: 20px;
+    }
 }
