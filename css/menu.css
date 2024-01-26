@@ -1,0 +1,329 @@
+body {
+    margin: 0 10px 0 10px;
+}
+
+#contenedor {
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+header {
+    background-image: url(../imgs/textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #5a3e36;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: 800;
+    padding: 0px;
+    text-align: center;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    left: 0;
+    width: 25%;
+    max-width: 100px;
+    padding: 10px;
+}
+
+header p {
+    display: inline-block;
+    margin: 0;
+    width: 75%;
+}
+
+div.contenido {
+    background-color: #fff8f0;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    float: left;
+    width: 70%;
+    padding: 2px;
+    margin: 2px;
+    border-right: #5a3e36 solid 1px;
+}
+
+nav.menu {
+    width: 80%;
+    transform: translateX(15%);
+    background-color: #a77e58;
+    color: #ffff;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px 0 50px 0;
+    height: 4em;
+    max-height: 50px;
+}
+
+nav.menu ul {
+    margin: 2px;
+    position: relative;
+    top: 10px;
+    padding: 0 20px 0 20px;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+    margin: 5px 0 5px 5px;
+    transform: translateY(-15px);
+}
+
+nav.menu a {
+    color: #ffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+nav.menu ul li a:hover {
+    border-bottom: #fff8f0 solid 4px;
+}
+
+nav.menu ul li a.atras img {
+    width: 30px;
+    height: 30px;
+    transform: translateY(10px);
+    transition: all 0.3s;
+}
+
+nav.menu ul li a.atras{
+    border-bottom: 0;
+}
+
+nav.menu ul li a.atras:hover img{
+    transform:scale(1.2) translateY(10px);
+}
+
+/* [data-alergenos="frutos secos mariscos"]::before {
+    content: '🦐 🌰 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="frutos secos mariscos"]::after {
+    content: '🌰 🦐 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="mariscos"]::before {
+    content: '🦐 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="mariscos"]::after {
+    content: '🦐 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="frutos secos"]::before {
+    content: '🌰 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="frutos secos"]::after {
+    content: '🌰 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="cacahuetes"]::before {
+    content: '🥜 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="cacahuetes"]::after {
+    content: '🥜 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="pescado"]::before {
+    content: '🐟 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="pescado"]::after {
+    content: '🐟 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="gluten"]::before {
+    content: '🌾 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="gluten"]::after {
+    content: '🌾 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="soja"]::before {
+    content: '🌱 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="soja"]::after {
+    content: '🌱 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="sesamo"]::before {
+    content: '🍞 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="sesamo"]::after {
+    content: '🍞 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="huevo"]::before {
+    content: '🥚 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="huevo"]::after {
+    content: '🥚 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="nata"]::before {
+    content: '🍦 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="nata"]::after {
+    content: '🍦 ';
+    padding-left: 5px;
+}
+
+/* [data-alergenos="nata huevo"]::before {
+    content: '🍦 🥚 ';
+    padding-right: 10px;
+} */
+
+[data-alergenos="nata huevo"]::after {
+    content: '🍦 🥚 ';
+    padding-left: 5px;
+}
+
+main {
+    width: 70%;
+    padding: 1%;
+    float: left;
+    border-right: #5a3e36 1px solid;
+    background-color: #fff8f0;
+}
+
+div.sidebar {
+    width: 20%;
+    padding: 1%;
+    float: left;
+    background-color: #fff8f0;
+}
+
+footer{
+    background-image: url(../imgs/textura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ecdcc6 ;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    content: none;
+    padding: 10px 0 10px 0;
+    clear: both;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav a{
+    color: #ecdcc6;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+footer nav a:hover{
+    transform:scale(1.2);
+}
+
+footer p {
+    padding: 10px;
+    margin: 0;
+}
+
+@media (max-width: 690px) {
+    main {
+        font-size: 14px;
+    }
+
+    div.sidebar {
+        font-size: 14px;
+    }
+
+    footer nav a{
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 615px) {
+    main {
+        font-size: 12px;
+    }
+
+    div.sidebar {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 553px) {
+    div.encabezado img {
+        left: 0;
+        width: 25%;
+        max-width: 100px;
+        padding: 10px;
+    }
+    
+    div.encabezado p {
+        display: inline-block;
+        margin: 0;
+        width: 75%;
+        font-size: 16px;
+    }
+
+    nav.menu ul li a{
+        font-size: 14px
+    }
+
+    nav.menu ul li a.atras img {
+        width: 15px;
+        height: 15px;
+        transform: translateY(10px);
+    }
+
+    main {
+        font-size: 10px;
+    }
+
+    div.sidebar {
+        font-size: 10px;
+    }
+
+    div.sidebar ul{
+        padding-left: 20px;
+    }
+}
